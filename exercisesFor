@@ -1,0 +1,190 @@
+*
+ * @author jose daniel
+ */
+public class EjerciciosFor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+    
+}
+
+
+
+
+
+
+* @author jose daniel
+ */
+public class programa10umeros2 {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+        int cantidadNumeros = 10;
+        int suma = 0;
+
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            int numero = scanner.nextInt();
+            suma += numero;
+        }
+
+        System.out.println("La suma de los 10 números es: " + suma);
+
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author jose daniel
+ */
+public class programatablaMultiplicar3 {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese un número para mostrar su tabla de multiplicar: ");
+        int numero = scanner.nextInt();
+
+        System.out.println("Tabla de multiplicar del " + numero + ":");
+
+        for (int i = 1; i <= 10; i++) {
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado); 
+            }
+    }
+}
+
+
+
+
+
+/**
+ *
+ * @author jose daniel
+ */
+public class letrasDelabecedario4 {
+    public static void main(String[] args) {
+        char letra = 'Z';
+
+        while (letra >= 'A') {
+            for (char c = 'A'; c <= letra; c++) {
+                System.out.print(c);
+            }
+            System.out.println();
+            letra--;
+        }
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author jose daniel
+ */
+public class prograDigite20Numeros5 {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+        int cantidadNumeros = 20;
+        int numerosPares = 0;
+        int numerosNegativos = 0;
+        int numerosCeros = 0;
+
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            int numero = scanner.nextInt();
+
+            if (numero % 2 == 0) {
+                numerosPares++;
+            }
+
+            if (numero < 0) {
+                numerosNegativos++;
+            }
+
+            if (numero == 0) {
+                numerosCeros++;
+            }
+        }
+
+        System.out.println("Números pares: " + numerosPares);
+        System.out.println("Números negativos: " + numerosNegativos);
+        System.out.println("Números iguales a cero: " + numerosCeros);
+
+    }
+ 
+}
+
+
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author jose daniel
+ */
+public class programaDigite10numeros6 {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+        int cantidadNumeros = 10;
+        int[] numeros = new int[cantidadNumeros];
+
+        // Solicitar al usuario que ingrese 10 números
+        for (int i = 0; i < cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + (i + 1) + ": ");
+            numeros[i] = scanner.nextInt();
+        }
+
+        // Imprimir en el orden especificado
+        System.out.println("El primero: " + numeros[0]);
+        System.out.println("El último: " + numeros[cantidadNumeros - 1]);
+        System.out.println("El segundo: " + numeros[1]);
+        System.out.println("El penúltimo: " + numeros[cantidadNumeros - 2]);
+        System.out.println("El tercero: " + numeros[2]);
+    }
+}
+
+
+
+* @author jose daniel
+ */
+public class dibujeCuadrado7 {
+    public static void main(String[] args) {
+        int lado = 5; // Tamaño del cuadrado
+
+        for (int i = 1; i <= lado; i++) {
+            for (int j = 1; j <= lado; j++) {
+                if (i == 1 || i == lado || j == 1 || j == lado) {
+                    System.out.print("x");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(); // Cambia de línea para la siguiente fila
+        }
+    }
+}
+
+
+
+
+
+
+
